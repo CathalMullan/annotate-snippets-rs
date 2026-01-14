@@ -2,8 +2,12 @@
 
 use crate::renderer::source_map::{as_substr, TrimmedPatch};
 use crate::Level;
-use std::borrow::Cow;
-use std::ops::Range;
+use alloc::borrow::Cow;
+use alloc::borrow::ToOwned;
+use alloc::string::String;
+use alloc::vec;
+use alloc::vec::Vec;
+use core::ops::Range;
 
 pub(crate) const ERROR_TXT: &str = "error";
 pub(crate) const HELP_TXT: &str = "help";

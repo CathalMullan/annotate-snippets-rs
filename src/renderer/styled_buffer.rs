@@ -6,8 +6,11 @@ use crate::renderer::stylesheet::Stylesheet;
 use crate::renderer::ElementStyle;
 use crate::Level;
 
-use std::fmt;
-use std::fmt::Write;
+use alloc::string::String;
+use alloc::vec;
+use alloc::vec::Vec;
+use core::fmt;
+use core::fmt::Write;
 
 #[derive(Debug)]
 pub(crate) struct StyledBuffer {

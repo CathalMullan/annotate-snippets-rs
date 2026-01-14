@@ -26,6 +26,7 @@ mod margin;
 mod styled_buffer;
 
 use crate::Report;
+use alloc::string::String;
 
 pub(crate) use render::normalize_whitespace;
 pub(crate) use render::ElementStyle;
